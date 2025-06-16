@@ -134,7 +134,7 @@
   <script>
       async function loadTeamData() {
   try {
-    const res = await fetch("/api/employees/sachin");
+    const res = await fetch("/api/employees/naveen");
     const teamMembers = await res.json();
     displayTable(teamMembers);
   } catch (e) {
