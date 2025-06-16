@@ -131,11 +131,10 @@
     <div id="naveenFullDataContainer"></div>
     <div id="detailsSection"></div>
   </main>
-
   <script>
-    async function loadTeamData() {
+      async function loadTeamData() {
   try {
-    const res = await fetch("/api/employees/naveen");
+    const res = await fetch("/api/employees/sachin");
     const teamMembers = await res.json();
     displayTable(teamMembers);
   } catch (e) {
